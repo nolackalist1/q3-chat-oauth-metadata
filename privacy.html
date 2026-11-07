@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy notice — Q3 Chat</title>
+  <style>body{font:17px/1.65 system-ui,sans-serif;margin:0;background:#f6f8fc;color:#182338}main{max-width:790px;margin:48px auto;padding:36px;background:white;border-radius:18px}h1{line-height:1.2}h2{font-size:1.25rem;margin-top:2rem}a{color:#1457b5}small{color:#566277}@media(max-width:700px){main{margin:15px;padding:24px}}</style>
+</head>
+<body><main>
+  <p><a href="./">Q3 Chat</a></p><h1>Privacy notice</h1>
+  <small>Effective 7 November 2026 · Personal Windows application</small>
+  <p>This notice describes the current Q3 Chat application maintained for its owner's personal use. It explains how Google data is accessed and processed when the owner connects Gmail, Google Calendar, Google Contacts or Google Drive.</p>
+  <h2>Data and permissions</h2>
+  <ul>
+    <li><strong>Gmail:</strong> account identity, labels, message and thread content, and drafts. The compose permission allows draft management and sending at Google's scope level; Q3's current connection exposes draft creation and reading, with no send-email tool.</li>
+    <li><strong>Calendar:</strong> subscribed-calendar details, event content and availability. Access is read-only.</li>
+    <li><strong>Contacts:</strong> profile and saved contact details needed for the owner's searches. Access is read-only.</li>
+    <li><strong>Drive:</strong> file names and other metadata, permitted document content, and account identity/storage details. Q3 can create text files and make copies where the app's approved file permission allows it. The current connection does not expose sharing changes or deletion.</li>
+  </ul>
+  <p>Q3 requests only the permissions configured for these features. The owner selects connected tools and approves each service action in the app. The app does not run a background mailbox or Drive indexing service.</p>
+  <h2>How data is used and shared</h2>
+  <p>Google data is used to carry out the owner's requests, such as summarizing a message, finding a document, reading availability or preparing a draft. Service results relevant to a request can become part of the chat context sent through the owner's private server to the model hosted on Modal. The owner should approve a read only when that processing is acceptable. OAuth credentials are handled separately and are not included in model prompts.</p>
+  <p>The laptop uses HTTPS for Google API requests and an SSH connection to the private server. The server uses HTTPS to reach the hosted model. Cloudflare supplies private network transport. Google, Modal, Cloudflare and hosting/network providers process the information necessary to provide their services under their own terms and privacy policies. Encryption in transit does not prevent the receiving server or model from processing the content.</p>
+  <h2>Storage and retention</h2>
+  <p>Q3 keeps the active chat and tool results in the app's memory. It does not automatically save a chat transcript. The owner can export a conversation using Save chat, in which case the exported file remains wherever the owner saves it. Closing the window or starting a new chat clears the app's active conversation; this does not delete an exported file or content deliberately created in a connected service.</p>
+  <p>OAuth access and refresh credentials are stored locally using Windows account encryption (DPAPI). Service settings and cached tool definitions are stored locally. Q3's diagnostic logs contain event names and timing rather than prompt text or service content. Infrastructure providers may retain operational information according to their own policies; this notice does not promise that third-party infrastructure has zero retention.</p>
+  <h2>Limited Use and model training</h2>
+  <p>Q3 Chat's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> and the <a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy">Google Workspace API User Data and Developer Policy</a>, including the Limited Use requirements.</p>
+  <p>Google data is used for the specific user-directed feature. Q3 does not sell it, use it for advertising, or use it to create, train or improve generalized or foundational AI models. Q3 does not share Google data for unrelated human review. This app's model connection is for generating responses to the owner's requests.</p>
+  <h2>Controls, revocation and deletion</h2>
+  <p>The owner can disable a connection in Q3's Plugins settings and can revoke Q3's access in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Disabling a tool does not revoke its Google grant. Revocation prevents future use of that grant; it does not erase messages, files or calendar content in Google, or any copies the owner deliberately exported. Local exported files and Q3 configuration/credential data can be removed from the owner's computer as needed. Never delete a credential by posting its contents in a support request.</p>
+  <h2>Questions and changes</h2>
+  <p>Contact the <a href="https://github.com/nolackalist1">maintainer</a> with questions about this application. Keep private data and credentials out of public issues. This notice will be updated if Q3's Google data handling changes; the date above identifies this version.</p>
+</main></body></html>
