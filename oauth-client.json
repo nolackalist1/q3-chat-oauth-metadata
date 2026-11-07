@@ -1,0 +1,16 @@
+{
+  "client_id": "https://nolackalist1.github.io/q3-chat-oauth-metadata/oauth-client.json",
+  "client_name": "Q3 Chat",
+  "redirect_uris": [
+    "http://127.0.0.1:8766/q3-callback"
+  ],
+  "token_endpoint_auth_method": "none",
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "application_type": "native"
+}
